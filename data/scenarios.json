@@ -1,0 +1,70 @@
+{
+  "notice": "All shipments, route stages, timestamps, and telemetry are deterministic synthetic drills. They do not represent real cargo, people, customers, or places.",
+  "suite": "Chilled goods policy exercise / 2-8 C transport band",
+  "scenarios": [
+    {
+      "id": "stable-load",
+      "loadId": "CS-204",
+      "title": "Stable handoff",
+      "cargo": "Leafy produce simulation",
+      "profile": "Control run with healthy sensors and no policy breach.",
+      "start": "2026-07-14T08:00:00.000Z",
+      "points": 48,
+      "tempBase": 4.4,
+      "humidityBase": 61,
+      "batteryStart": 93,
+      "signalBase": 88,
+      "events": []
+    },
+    {
+      "id": "spike-drill",
+      "loadId": "CS-315",
+      "title": "Single-spike drill",
+      "cargo": "Cultured dairy simulation",
+      "profile": "One isolated temperature spike tests persistence suppression.",
+      "start": "2026-07-14T09:30:00.000Z",
+      "points": 48,
+      "tempBase": 4.8,
+      "humidityBase": 64,
+      "batteryStart": 84,
+      "signalBase": 82,
+      "events": [{ "kind": "temperature", "start": 21, "end": 21, "value": 11.6 }]
+    },
+    {
+      "id": "dock-excursion",
+      "loadId": "CS-418",
+      "title": "Dock-door excursion",
+      "cargo": "Vaccine-pack simulation",
+      "profile": "An open-door interval drives persistent temperature and humidity evidence.",
+      "start": "2026-07-14T11:00:00.000Z",
+      "points": 48,
+      "tempBase": 4.1,
+      "humidityBase": 58,
+      "batteryStart": 77,
+      "signalBase": 79,
+      "events": [
+        { "kind": "door", "start": 17, "end": 25, "value": true },
+        { "kind": "temperature-ramp", "start": 18, "end": 29, "peak": 12.7 },
+        { "kind": "humidity", "start": 19, "end": 27, "value": 84 }
+      ]
+    },
+    {
+      "id": "sensor-dropout",
+      "loadId": "CS-527",
+      "title": "Sensor-health drill",
+      "cargo": "Fresh seafood simulation",
+      "profile": "A telemetry gap, weak signal, and low battery require sensor review.",
+      "start": "2026-07-14T12:15:00.000Z",
+      "points": 48,
+      "tempBase": 3.7,
+      "humidityBase": 67,
+      "batteryStart": 31,
+      "batteryEnd": 14,
+      "signalBase": 71,
+      "events": [
+        { "kind": "missing", "start": 18, "end": 21 },
+        { "kind": "signal", "start": 30, "end": 47, "value": 17 }
+      ]
+    }
+  ]
+}

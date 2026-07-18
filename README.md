@@ -6,7 +6,7 @@ ColdChain Sentinel is a static telemetry incident console for exploring how tran
 
 **Repository:** https://github.com/jubjub-cpu/coldchain-sentinel
 
-**Release:** https://github.com/jubjub-cpu/coldchain-sentinel/releases/tag/v1.0.0
+**Release:** https://github.com/jubjub-cpu/coldchain-sentinel/releases/tag/v1.0.1
 
 ![ColdChain Sentinel desktop workspace](docs/screenshots/coldchain-sentinel-desktop.png)
 

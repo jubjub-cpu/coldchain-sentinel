@@ -1,5 +1,11 @@
 # Release Notes
 
+## v1.0.1 - Accessibility hardening
+
+- Increased contrast for secondary, status, and critical telemetry text.
+- Made the horizontally scrollable reading ledger keyboard focusable and labeled.
+- Preserved telemetry analysis, policy controls, incident decisions, and browser workflows.
+
 ## v1.0.0 - Initial public release
 
 - Added four deterministic synthetic cold-chain drills with 188 generated readings.

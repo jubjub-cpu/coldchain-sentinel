@@ -47,7 +47,7 @@ The analysis engine is deterministic JavaScript in [`assets/telemetry-engine.mjs
 4. Shorter runs remain visible as suppressions.
 5. Independent sensor-health checks evaluate cadence, battery, and signal strength.
 
-This is AI-assisted product development, but the runtime does not call an AI model. The browser applies explicit thresholds to synthetic data.
+The runtime uses explicit thresholds and deterministic rules on synthetic data; it does not call a hosted AI model.
 
 ## Human review boundary
 

@@ -2,7 +2,7 @@
 
 ## Automated checks
 
-Status: local release candidate passed on 2026-07-17.
+Status: local and deployed release checks passed on 2026-07-17.
 
 The validation suite covers:
 
@@ -25,6 +25,21 @@ hysteresis=true, spikeSuppression=true, sensorHealth=true,
 humanGate=true, desktopOverflow=false, mobileOverflow=false,
 consoleErrors=0, failedRequests=0
 ```
+
+Deployed result against `https://jubjub-cpu.github.io/coldchain-sentinel/`:
+
+```text
+COLDCHAIN BROWSER TESTS PASSED
+target=deployed, scenarios=4, telemetry=188, canvas=true,
+temperature=true, humidity=true, door=true, sensorHealth=true,
+persistence=true, hysteresis=true, spikeSuppression=true,
+policyTuning=true, humanGate=true, jsonExport=true, keyboard=true,
+desktopOverflow=false, mobileOverflow=false,
+consoleErrors=0, failedRequests=0
+HTTP 200 /, /data/scenarios.json, and repository
+```
+
+The first deployed product tree was commit `064b22f1c333b3e853ade7980a2095de42d696aa`.
 
 ## Release target
 
